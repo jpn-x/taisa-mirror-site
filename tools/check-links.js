@@ -1,4 +1,4 @@
-// 全リンク確認: node tools/check-links.js [ベースURL]   例) node tools/check-links.js https://taisa-mirror.cadillac600.workers.dev
+// 全リンク確認: node tools/check-links.js [ベースURL]   例) node tools/check-links.js https://taisa-mirror.jp-x.workers.dev
 // index.html の href/src と config.js のリンクを実際に取得して、404などを洗い出します。
 const fs = require('fs'), path = require('path'), vm = require('vm');
 const base = (process.argv[2] || '').replace(/\/$/, '');

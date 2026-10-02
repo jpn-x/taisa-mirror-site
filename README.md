@@ -32,7 +32,7 @@ HTML/CSS は触りません。
 ```
 npx wrangler deploy          # Cloudflare にログイン済み（CLOUDFLARE_API_TOKEN）のPCで
 ```
-公開URL: https://taisa-mirror.cadillac600.workers.dev
+公開URL: https://taisa-mirror.jp-x.workers.dev
 （`*.workers.dev` はCloudflareアカウントの内部名です。将来、独自ドメインを付ける場合は Workers の Custom Domain を使います。）
 
 ## 画像を差し替える
@@ -43,5 +43,5 @@ npx wrangler deploy          # Cloudflare にログイン済み（CLOUDFLARE_API
 ```
 node serve.js
 node tools/check-links.js              # リンク確認
-node tools/check-links.js https://taisa-mirror.cadillac600.workers.dev   # 公開後の確認
+node tools/check-links.js https://taisa-mirror.jp-x.workers.dev   # 公開後の確認
 ```
