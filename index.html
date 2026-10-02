@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAISA Mirror 超入門｜iPhoneの画面、Windowsに映そう</title>
+<meta name="description" content="iPhoneの画面を、Windowsのブラウザに映す。完全無料・広告なし・アカウント不要・クラウド不要。起動して、iPhoneで選ぶだけの超初心者向けガイド。">
+<meta name="robots" content="noindex"><!-- Phase 1: 本番公開前。公開時にこの行を外す -->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="TAISA Mirror 超入門｜iPhoneの画面、Windowsに映そう">
+<meta property="og:description" content="起動して、iPhoneで選ぶ。それだけ。完全無料・広告なし・アカウント不要・クラウド不要。">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo.svg">
+<meta name="theme-color" content="#FF77AA">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#top">本文へスキップ</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#top" aria-label="TAISA Mirror 超入門 トップへ戻る">
+      <img class="nav-logo-icon" src="images/logo.svg" alt="" width="34" height="34">
+      <span>TAISA Mirror<span class="nav-logo-sub">超入門</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#top">🏠 はじめに</a>
+      <a href="#step0">⬇️ ダウンロード</a>
+      <a href="#step1">📖 使い方</a>
+      <a href="#complete">🎉 完成</a>
+      <a href="#help">🛟 困ったとき</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero">
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
+
+  <div class="hero-inner reveal">
+    <p class="eyebrow">超初心者向け・Windows 11</p>
+    <img class="hero-logo" src="images/logo.svg" alt="TAISA Mirror ロゴ" width="112" height="112">
+    <h1 class="hero-title">
+      iPhoneの画面、<br>
+      <span class="hero-title-accent">Windowsに映そう。</span>
+    </h1>
+    <p class="hero-sub">起動して、iPhoneで選ぶ。<br class="sp-only"><strong>それだけ。</strong></p>
+
+    <div class="free-badges">
+      <span class="free-badge"><b>✓</b> 完全無料</span>
+      <span class="free-badge"><b>✓</b> 広告なし</span>
+      <span class="free-badge"><b>✓</b> アカウント不要</span>
+      <span class="free-badge"><b>✓</b> クラウド不要</span>
+    </div>
+
+    <a href="#step0" class="cta-button">3分で使ってみる <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="hero-visual reveal">
+    <img src="images/steps/step5-done.svg" alt="パソコンのブラウザに、iPhoneの画面が映っているイメージ" width="800" height="500">
+    <p class="hero-visual-note">こんなふうに、映ります。</p>
+  </div>
+</section>
+
+<!-- ============ STEP 0 : DOWNLOAD ============ -->
+<section id="step0" class="section section-white">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 0</p>
+    <h2 class="section-title">TAISA Mirrorをダウンロード</h2>
+    <p class="section-lead">ボタンを押して、ZIPファイルを受け取ろう。</p>
+
+    <div class="dl-card">
+      <p class="dl-label">🪟 Windowsをお使いの方</p>
+      <p class="dl-sub">まずはこれ！</p>
+      <a class="dl-primary-btn" href="https://github.com/jpn-x/taisa-mirror/releases/latest" data-link="download" target="_blank" rel="noopener">
+        ⬇️ Windows版をダウンロード
+      </a>
+      <div class="dl-chips">
+        <span class="chip">Windows 11 / 64bit</span>
+        <span class="chip">インストール不要</span>
+      </div>
+      <p class="dl-note">ページが開いたら、<strong>「taisa-mirror-…-win-x64.zip」</strong>を押してね。</p>
+      <a class="dl-sub-link" href="https://github.com/jpn-x/taisa-mirror" data-link="github" target="_blank" rel="noopener">🌐 GitHubでソースコードを見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEP 1 : UNZIP ============ -->
+<section id="step1" class="section section-cream">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 1</p>
+    <h2 class="section-title">ZIPを展開しよう</h2>
+    <p class="section-lead">ZIPは「ぎゅっと詰めた箱」。まず、ひらきます。</p>
+
+    <div class="step-grid two">
+      <article class="step-card reveal">
+        <h3><span class="num">1</span>ZIPを右クリック</h3>
+        <p>ダウンロードしたZIPを、右クリック。</p>
+        <h3 style="margin-top:18px"><span class="num">2</span>「すべて展開」</h3>
+        <p>メニューから「すべて展開」を選んで、そのまま「展開」。</p>
+        <figure class="shot"><img src="images/steps/step1-zip-menu.svg" alt="ZIPファイルを右クリックして「すべて展開」を選ぶ" width="800" height="500" loading="lazy"><figcaption>（画像は後で実際の画面に差し替え）</figcaption></figure>
+      </article>
+      <article class="step-card reveal">
+        <h3><span class="num">3</span>展開したフォルダを開く</h3>
+        <p>できたフォルダの中に、<span class="file-chip">Start TAISA Mirror.cmd</span> があればOK。</p>
+        <figure class="shot"><img src="images/steps/step1-folder.svg" alt="展開したフォルダの中身。Start TAISA Mirror.cmdがある" width="800" height="500" loading="lazy"><figcaption>（画像は後で実際の画面に差し替え）</figcaption></figure>
+      </article>
+    </div>
+
+    <div class="warn-box">
+      <span class="ico">⚠️</span>
+      <p>ZIPの<strong>中から直接</strong>起動しないでね。<br>かならず「すべて展開」してから！</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEP 2 : START ============ -->
+<section id="step2" class="section section-white">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 2</p>
+    <h2 class="section-title">TAISA Mirrorを起動</h2>
+    <p class="section-lead"><span class="file-chip">Start TAISA Mirror.cmd</span> を<strong>ダブルクリック</strong>。</p>
+
+    <div class="big-shot">
+      <img src="images/steps/step2-start.svg" alt="Start TAISA Mirror.cmd をダブルクリックする" width="800" height="500" loading="lazy">
+    </div>
+    <p class="section-lead" style="margin-top:22px">起動すると、<strong>Chromeが自動で開きます。</strong></p>
+    <div class="reassure">🌸 難しい設定は、ありません。</div>
+  </div>
+</section>
+
+<!-- ============ STEP 3 : CHROME ============ -->
+<section id="step3" class="section section-pop">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 3</p>
+    <h2 class="section-title">Chromeで<br class="sp-only">「ミラーリング開始」</h2>
+    <p class="section-lead">大きなボタンを、ポチッ。</p>
+
+    <div class="big-shot">
+      <img src="images/steps/step3-chrome.svg" alt="Chromeの画面にある「ミラーリング開始」ボタン。ここをクリック" width="800" height="500" loading="lazy">
+    </div>
+    <p class="section-lead" style="margin-top:22px">「接続待機中…」と出れば、準備OK。</p>
+  </div>
+</section>
+
+<!-- ============ STEP 4 : IPHONE ============ -->
+<section id="step4" class="section section-white">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 4</p>
+    <h2 class="section-title">iPhoneで<br class="sp-only">TAISA Mirrorを選ぶ</h2>
+    <p class="section-lead">パソコンとiPhoneは、<strong>同じWi-Fi</strong>につないでおいてね。</p>
+
+    <div class="flow-arrows">
+      <div class="flow-pill"><span class="num sky">1</span>画面の右上から、下へスワイプ</div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="flow-pill"><span class="num sky">2</span>「画面ミラーリング」をタップ</div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="flow-pill"><span class="num sky">3</span>「TAISA Mirror」をタップ</div>
+    </div>
+
+    <div class="big-shot">
+      <img src="images/steps/step4-iphone.svg" alt="iPhoneのコントロールセンターから画面ミラーリング、TAISA Mirrorを選ぶ流れ" width="800" height="500" loading="lazy">
+    </div>
+
+    <div class="remember">ここだけ覚えて！<small>右上スワイプ → 画面ミラーリング → TAISA Mirror</small></div>
+  </div>
+</section>
+
+<!-- ============ STEP 5 : COMPLETE ============ -->
+<section id="complete" class="section section-complete">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 5</p>
+    <h2 class="complete-title">SETUP COMPLETE!</h2>
+    <p class="section-lead center">映った！<br>これで、iPhoneの画面がWindowsに映ります。</p>
+
+    <div class="diagram" aria-label="iPhoneからWi-Fiを通ってWindowsに映る図">
+      <div class="diagram-node">📱 iPhone</div>
+      <div class="diagram-arrow" aria-hidden="true">→</div>
+      <div class="diagram-node"><small>おうちの</small>Wi-Fi</div>
+      <div class="diagram-arrow" aria-hidden="true">→</div>
+      <div class="diagram-node hl">TAISA Mirror</div>
+      <div class="diagram-arrow" aria-hidden="true">→</div>
+      <div class="diagram-node">🖥️ Windows</div>
+    </div>
+    <p class="safe-line">🔒 画面は、クラウドへ送信されません。</p>
+  </div>
+</section>
+
+<!-- ============ DAILY ============ -->
+<section id="daily" class="section section-night">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow" style="background:var(--night-card);color:#fff">次からは</p>
+    <h2 class="section-title on-night">次からは、<br class="sp-only">もっと簡単。</h2>
+    <p class="section-lead on-night">もう、ダウンロードも展開もいりません。</p>
+
+    <div class="daily-card"><span class="num">1</span><div><div class="t">TAISA Mirrorを起動</div><div class="d">ダブルクリック（デスクトップのアイコンでもOK）</div></div></div>
+    <div class="daily-card"><span class="num">2</span><div><div class="t">Chromeでミラーリング開始</div><div class="d">開いた画面の、大きなボタンをポチッ</div></div></div>
+    <div class="daily-card"><span class="num">3</span><div><div class="t">iPhoneでTAISA Mirrorを選ぶ</div><div class="d">右上スワイプ → 画面ミラーリング → TAISA Mirror</div></div></div>
+    <p class="daily-goal">↓<br><span>映る。</span></p>
+  </div>
+</section>
+
+<!-- ============ OTHER PC ============ -->
+<section id="other-pc" class="section section-cream">
+  <div class="section-inner reveal">
+    <h2 class="section-title center">別のPCでも使いたい？</h2>
+    <p class="section-lead center">ZIPをそのPCにもコピーして、展開するだけ。</p>
+
+    <div class="pc-row" style="justify-content:center">
+      <span class="pc-pill">🖥️ 大阪PC</span>
+      <span class="pc-pill">💻 愛媛PC</span>
+      <span class="pc-pill">🖥️ サブPC</span>
+    </div>
+    <p class="section-lead center" style="margin-top:-6px">それぞれのPCで、ちゃんと使えます。</p>
+
+    <div class="tip-box">
+      <h3>💡 ちょっとだけ豆知識</h3>
+      <p>Chromeのアドレスに出る <span class="file-chip">localhost</span> は、<strong>「そのPC自身」</strong>という意味です。</p>
+      <p>大阪PCの localhost と、愛媛PCの localhost は、別ものです。<br>だから、それぞれのPCで起動すれば大丈夫。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAFETY ============ -->
+<section id="safe" class="section section-pop">
+  <div class="section-inner reveal">
+    <h2 class="section-title center">ローカル完結。</h2>
+    <p class="section-lead center">安心して使えるように、つくってあります。</p>
+
+    <div class="safe-grid">
+      <div class="safe-card"><span class="ico">🛡️</span><b>DefenderをOFFにしない</b><span>そのままでOK</span></div>
+      <div class="safe-card"><span class="ico">🔐</span><b>Smart App ControlをOFFにしない</b><span>そのままでOK</span></div>
+      <div class="safe-card"><span class="ico">🙅</span><b>アカウント不要</b><span>登録はいりません</span></div>
+      <div class="safe-card"><span class="ico">🏠</span><b>クラウド不要</b><span>おうちの中だけで動く</span></div>
+      <div class="safe-card"><span class="ico">🚫</span><b>広告なし</b><span>ずっと</span></div>
+      <div class="safe-card"><span class="ico">👀</span><b>テレメトリなし</b><span>利用データを集めません</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HELP ============ -->
+<section id="help" class="section section-white">
+  <div class="section-inner reveal">
+    <h2 class="section-title center">困ったとき</h2>
+    <p class="section-lead center">たいてい、これで直ります。</p>
+
+    <div class="faq-list">
+      <details class="faq"><summary>iPhoneにTAISA Mirrorが出ない</summary>
+        <div class="ans">パソコンとiPhoneが<b>同じWi-Fi（同じルーター）</b>か確認してね。ブラウザが「接続待機中」になっているかも見てみよう。</div></details>
+      <details class="faq"><summary>Chromeが開かない</summary>
+        <div class="ans">TAISA Mirrorを<b>もう一度起動</b>してみよう。アドレスに <span class="file-chip">localhost:7878</span> を入力しても開けるよ。</div></details>
+      <details class="faq"><summary>映像が止まった</summary>
+        <div class="ans">まず、ブラウザを<b>F5（再読み込み）</b>。それでもダメなら、一度ミラーリングを止めて、iPhoneからつなぎ直そう。</div></details>
+      <details class="faq"><summary>Windowsが警告を出した</summary>
+        <div class="ans"><b>DefenderやSmart App ControlはOFFにしないでね。</b>ZIPを右クリック →「プロパティ」→「許可する」にチェックしてから展開すると、出にくくなります。</div></details>
+    </div>
+
+    <div class="more-link"><a href="https://github.com/jpn-x/taisa-mirror/blob/main/docs/TROUBLESHOOTING.md" data-link="troubleshooting" target="_blank" rel="noopener">くわしいトラブルシューティング →</a></div>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section id="final" class="section section-complete final">
+  <div class="section-inner center reveal">
+    <h2 class="complete-title">SETUP COMPLETE!</h2>
+    <p class="section-lead center" style="margin-bottom:26px">iPhoneの画面、<br class="sp-only">もうWindowsに映せます。</p>
+    <a class="cta-button" href="https://github.com/jpn-x/taisa-mirror/releases/latest" data-link="download" target="_blank" rel="noopener">TAISA Mirrorをダウンロード</a>
+    <a class="final-sub" href="https://github.com/jpn-x/taisa-mirror" data-link="github" target="_blank" rel="noopener">GitHubを見る →</a>
+    <div class="final-tags">
+      <span class="free-badge"><b>✓</b> 無料</span>
+      <span class="free-badge"><b>✓</b> OSS</span>
+      <span class="free-badge"><b>✓</b> 広告なし</span>
+      <span class="free-badge"><b>✓</b> アカウント不要</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUPPLEMENT (技術の補足・小さく) ============ -->
+<section class="supp">
+  <details>
+    <summary>くわしい人向けの補足</summary>
+    <ul>
+      <li>TAISA Mirrorは、iPhoneのAirPlay（画面ミラーリング）を受け取って、ブラウザに表示するローカルの小さなツールです。</li>
+      <li>実行されるのは、公式の署名済みNode.jsと、JavaScript・WebAssemblyだけ。自作のexeやドライバはありません。</li>
+      <li>映像はH.264のままブラウザ（WebCodecs）に渡すので軽く、画面データはPCの外に出ません。</li>
+      <li>v0.1は映像のみです（音声・H.265は未対応）。ライセンスは GPL-3.0-or-later。</li>
+      <li>「AirPlay」はApple Inc.の商標です。TAISA MirrorはAppleとは無関係の、個人開発のオープンソースです。無保証でお使いください。</li>
+    </ul>
+  </details>
+</section>
+
+<footer class="site-footer">
+  <a href="#top" class="footer-logo"><img src="images/logo.svg" alt="" width="30" height="30">TAISA Mirror 超入門</a>
+  <p>無料・OSS・広告なし・アカウント不要</p>
+  <p>同じシリーズ: <a class="series" href="https://sharex-tutorial.pages.dev/" data-link="sharex" target="_blank" rel="noopener">ShareX超入門</a></p>
+</footer>
+
+<button class="to-top" id="toTop" hidden aria-label="ページの先頭へ">↑</button>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <style>text{font-family:"Yu Gothic UI","Hiragino Maru Gothic ProN",Meiryo,sans-serif;font-weight:800}</style>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE4EF"/><stop offset="1" stop-color="#DDF1FF"/></linearGradient></defs>
+  <rect width="800" height="500" rx="24" fill="url(#bg)"/>
+  <rect x="60" y="30" width="680" height="430" rx="20" fill="#fff"/>
+  <path d="M80 30h640a20 20 0 0 1 20 20v32H60V50a20 20 0 0 1 20-20z" fill="#DDF1FF"/>
+  <circle cx="92" cy="56" r="8" fill="#FF77AA"/><circle cx="118" cy="56" r="8" fill="#A98BFF"/><circle cx="144" cy="56" r="8" fill="#5BB8F5"/>
+  <rect x="180" y="40" width="400" height="32" rx="16" fill="#fff"/><text x="200" y="62" font-size="18" fill="#6A6683">localhost:7878</text>
+  <rect x="100" y="104" width="600" height="38" rx="19" fill="#FFF0F6"/><text x="400" y="130" text-anchor="middle" font-size="19" fill="#F2518F">● iPhone 接続中</text>
+  <g transform="translate(300 156)">
+    <rect width="200" height="290" rx="26" fill="#2A2748"/>
+    <rect x="10" y="12" width="180" height="266" rx="18" fill="url(#bg)"/>
+    <g fill="#fff">
+      <rect x="26" y="40" width="34" height="34" rx="9"/><rect x="83" y="40" width="34" height="34" rx="9"/><rect x="140" y="40" width="34" height="34" rx="9"/>
+      <rect x="26" y="96" width="34" height="34" rx="9"/><rect x="83" y="96" width="34" height="34" rx="9"/><rect x="140" y="96" width="34" height="34" rx="9"/>
+      <rect x="26" y="152" width="34" height="34" rx="9"/><rect x="83" y="152" width="34" height="34" rx="9"/><rect x="140" y="152" width="34" height="34" rx="9"/>
+    </g>
+    <rect x="26" y="224" width="148" height="40" rx="14" fill="#fff" opacity=".7"/>
+  </g>
+</svg>
