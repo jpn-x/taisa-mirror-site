@@ -224,6 +224,15 @@ a{ color:inherit; }
 }
 .dl-sub-link:hover{ color:var(--pink-deep); border-color:var(--pink-soft); }
 
+/* download verify (small) */
+.verify{ margin-top:18px; width:100%; text-align:left; font-size:.85rem; color:var(--ink-soft); }
+.verify summary{ cursor:pointer; font-weight:800; text-align:center; list-style:none; }
+.verify summary::-webkit-details-marker{ display:none; }
+.verify[open] summary{ margin-bottom:8px; }
+.verify p{ margin:6px 0; }
+.verify code{ font-family:"Consolas","Menlo",monospace; background:var(--lavender-soft); padding:2px 8px; border-radius:8px; word-break:break-all; color:var(--ink); font-size:.92em; }
+.verify a{ color:var(--sky-deep); font-weight:800; }
+
 /* ============ STEP cards ============ */
 .step-grid{ display:grid; gap:22px; margin-top:8px; }
 .step-grid.two{ grid-template-columns:1fr 1fr; align-items:start; }
@@ -270,6 +279,18 @@ a{ color:inherit; }
   box-shadow:var(--shadow-card); margin-top:10px;
 }
 .big-shot img{ width:100%; border-radius:var(--radius-md); }
+
+/* 画面イメージの上の「ここをクリック」 */
+.callout-wrap{ position:relative; }
+.callout{
+  position:absolute; left:63%; top:40%;
+  background:var(--sky); color:#fff; font-weight:800; font-size:clamp(.78rem, 2.6vw, 1.05rem);
+  padding:.45em 1em; border-radius:999px; box-shadow:0 4px 0 var(--sky-deep); white-space:nowrap;
+}
+.callout::after{
+  content:""; position:absolute; left:14%; bottom:-.55em; width:.9em; height:.9em; background:var(--sky);
+  transform:rotate(45deg); border-radius:0 0 .25em 0; z-index:-1;
+}
 
 /* ============ iPhone steps ============ */
 .flow-arrows{ display:grid; gap:14px; margin:6px 0 26px; }
@@ -424,6 +445,7 @@ a{ color:inherit; }
   .blob-3{ display:none; }
 }
 @media (max-width: 420px){
+  .dl-primary-btn{ font-size:clamp(.95rem, 4.3vw, 1.15rem); padding:20px 14px; white-space:nowrap; }
   .safe-grid{ grid-template-columns:1fr; }
   .nav-logo{ font-size:1.02rem; }
 }

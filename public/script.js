@@ -2,10 +2,19 @@
   'use strict';
 
   /* ---------- links from config.js ---------- */
-  const L = window.TAISA_LINKS || {};
+  // config.js の window.TAISA を、ページ内のリンク(data-link)と表示(data-bind)に反映
+  const T = window.TAISA || {};
+  const L = {
+    download: T.downloadUrl, github: T.githubUrl, release: T.releaseUrl, siterepo: T.siteRepoUrl,
+    troubleshooting: T.troubleshootingUrl, verify: T.verifyUrl, sharex: T.sharexUrl
+  };
   document.querySelectorAll('[data-link]').forEach((a) => {
     const url = L[a.dataset.link];
     if (url) a.setAttribute('href', url);
+  });
+  document.querySelectorAll('[data-bind]').forEach((el) => {
+    const v = T[el.dataset.bind];
+    if (v) el.textContent = v;
   });
 
   /* ---------- mobile nav toggle ---------- */

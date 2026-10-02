@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8">
+<!-- OGP画像(1200x630)の元。 tools/make-images.ps1 で public/images/og-image.png を作ります。デザインはサイトのトーンそのまま。 -->
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{--pink:#FF77AA;--pink-deep:#F2518F;--sky:#5BB8F5;--sky-deep:#2F95DD;--sky-soft:#DDF1FF;--lav:#ECE6FF;--ink:#34304A;--ink-soft:#6A6683}
+  *{box-sizing:border-box;margin:0}
+  body{width:1200px;height:630px;overflow:hidden;font-family:"M PLUS Rounded 1c","Yu Gothic UI",sans-serif;color:var(--ink);
+    background:linear-gradient(135deg,#FFEAF3 0%,#F1F0FF 55%,#E3F3FF 100%);position:relative}
+  .blob{position:absolute;border-radius:50%;opacity:.7}
+  .b1{width:360px;height:360px;background:var(--sky-soft);left:-110px;top:-120px}
+  .b2{width:420px;height:420px;background:var(--lav);right:-120px;bottom:-150px}
+  .b3{width:200px;height:200px;background:#FFE4EF;right:90px;top:50px}
+  .wrap{position:relative;z-index:2;height:100%;display:flex;align-items:center;gap:48px;padding:0 80px}
+  .logo{flex:none;width:220px;height:220px;border-radius:56px;box-shadow:0 12px 0 rgba(52,48,74,.07),0 28px 50px rgba(52,48,74,.14)}
+  .eyebrow{display:inline-block;background:#fff;color:var(--pink-deep);font-weight:800;font-size:28px;padding:8px 26px;border-radius:999px;box-shadow:0 4px 0 rgba(52,48,74,.06);margin-bottom:22px}
+  h1{font-weight:900;font-size:68px;white-space:nowrap;line-height:1.2;letter-spacing:.01em}
+  h1 .acc{background:linear-gradient(90deg,var(--pink),var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .name{margin-top:20px;font-weight:900;font-size:40px;color:var(--ink-soft)}
+  .name b{color:var(--pink-deep)}
+  .tags{display:flex;gap:14px;margin-top:24px}
+  .tag{background:#fff;border:3px solid var(--sky-soft);border-radius:999px;font-weight:800;font-size:24px;padding:6px 20px;box-shadow:0 4px 0 rgba(52,48,74,.06)}
+  .tag i{font-style:normal;color:var(--sky-deep);margin-right:6px}
+</style></head>
+<body>
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap">
+    <img class="logo" src="../public/images/logo.svg" alt="">
+    <div>
+      <div class="eyebrow">TAISA Mirror 超入門</div>
+      <h1>iPhoneの画面を<br><span class="acc">Windowsに映そう。</span></h1>
+      <div class="name">起動して、iPhoneで選ぶ。<b>それだけ。</b></div>
+      <div class="tags"><span class="tag"><i>✓</i>完全無料</span><span class="tag"><i>✓</i>広告なし</span><span class="tag"><i>✓</i>アカウント不要</span></div>
+    </div>
+  </div>
+</body></html>
