@@ -457,3 +457,12 @@ a{ color:inherit; }
 .xbtn:hover{ border-color:var(--pink); color:var(--pink); }
 .xbtn.fill{ background:#fff; color:var(--night); border-color:#fff; }
 .xbtn.fill:hover{ background:var(--pink); border-color:var(--pink); color:#fff; }
+/* ============ image zoom ============ */
+.zoom-wrap{ display:block; position:relative; cursor:zoom-in; border-radius:inherit; -webkit-tap-highlight-color:transparent; }
+.zoom-wrap:focus-visible{ outline:3px solid var(--pink); outline-offset:3px; }
+.zoom-wrap::after{ content:"🔍"; position:absolute; right:10px; bottom:10px; width:34px; height:34px; display:flex; align-items:center; justify-content:center; font-size:16px; background:rgba(255,255,255,.92); border-radius:50%; box-shadow:0 2px 8px rgba(42,39,72,.22); pointer-events:none; }
+.zoom-box{ position:fixed; inset:0; z-index:1000; background:rgba(42,39,72,.86); display:flex; align-items:center; justify-content:center; padding:20px; cursor:zoom-out; }
+.zoom-box[hidden]{ display:none; }
+.zoom-img{ max-width:100%; max-height:100%; width:auto; height:auto; border-radius:14px; background:#fff; box-shadow:0 12px 40px rgba(0,0,0,.4); }
+.zoom-close{ position:absolute; top:12px; right:14px; width:44px; height:44px; border:0; border-radius:50%; background:#fff; color:var(--night); font-size:26px; line-height:1; cursor:pointer; box-shadow:0 2px 10px rgba(0,0,0,.3); }
+body.zoom-open{ overflow:hidden; }

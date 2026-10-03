@@ -52,4 +52,35 @@
     window.addEventListener('scroll', () => { toTop.hidden = window.scrollY < 480; }, { passive: true });
     toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
+  /* ---------- image zoom (tap / click to enlarge) ----------
+     Every content image zooms automatically (new images too). Logos/icons are skipped; add class "no-zoom" to opt out. */
+  const zoomImgs = document.querySelectorAll('img:not(.hero-logo):not(.nav-logo-icon):not(.no-zoom):not(.footer-logo img)');
+  if (zoomImgs.length) {
+    const box = document.createElement('div');
+    box.className = 'zoom-box'; box.hidden = true; box.setAttribute('role', 'dialog'); box.setAttribute('aria-modal', 'true'); box.setAttribute('aria-label', '画像の拡大表示');
+    box.innerHTML = '<button type="button" class="zoom-close" aria-label="閉じる">×</button><img class="zoom-img no-zoom" alt="">';
+    document.body.appendChild(box);
+    const big = box.querySelector('.zoom-img');
+    let lastFocus = null;
+    const open = (img) => {
+      lastFocus = document.activeElement;
+      big.src = img.currentSrc || img.src; big.alt = img.alt || '';
+      box.hidden = false; document.body.classList.add('zoom-open');
+      box.querySelector('.zoom-close').focus();
+    };
+    const close = () => {
+      box.hidden = true; document.body.classList.remove('zoom-open'); big.removeAttribute('src');
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    };
+    box.addEventListener('click', close);
+    document.addEventListener('keydown', (e) => { if (!box.hidden && e.key === 'Escape') close(); });
+    zoomImgs.forEach((img) => {
+      const wrap = document.createElement('span');
+      wrap.className = 'zoom-wrap';
+      img.parentNode.insertBefore(wrap, img); wrap.appendChild(img);
+      wrap.tabIndex = 0; wrap.setAttribute('role', 'button'); wrap.setAttribute('aria-label', (img.alt || '画像') + '（拡大）');
+      wrap.addEventListener('click', () => open(img));
+      wrap.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); } });
+    });
+  }
 })();
