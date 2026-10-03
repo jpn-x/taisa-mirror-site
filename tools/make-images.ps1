@@ -16,6 +16,7 @@ function Shot($html, $out, $w, $h, $transparent) {
   if (-not (Test-Path $out)) { throw "failed: $out" }
   Write-Host ("wrote {0} ({1} bytes)" -f $out, (Get-Item $out).Length)
 }
-Shot (Join-Path $PSScriptRoot 'og.html')   (Join-Path $img 'og-image.png')          1200 630 $false
+# og-image.png は大佐の指定画像に差し替え済み（2026-10-04）。上書きしないよう、og.html からの自動生成は止めています。
+# Shot (Join-Path $PSScriptRoot 'og.html')   (Join-Path $img 'og-image.png')          1200 630 $false
 Shot (Join-Path $PSScriptRoot 'icon.html') (Join-Path $img 'apple-touch-icon.png')  180  180 $true
 Shot (Join-Path $PSScriptRoot 'icon.html') (Join-Path $img 'favicon-32.png')         32   32 $true
