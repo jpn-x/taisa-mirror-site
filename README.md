@@ -1,9 +1,9 @@
 # MirrorX 公式サイト（超入門）
 
-開発コードネーム：**TAISA MIRROR**（Development codename: TAISA MIRROR）
+Development codename: TAISA
 
 Official download and beginner-friendly setup guide for **MirrorX**.
-MirrorX 本体（リポジトリ名は開発コードネームのまま `taisa-mirror`）: https://github.com/jpn-x/taisa-mirror
+MirrorX 本体（リポジトリ名は旧開発名のまま `taisa-mirror`）: https://github.com/jpn-x/taisa-mirror
 
 - 役割: このリポジトリ＝ダウンロード・使い方・FAQの**公式サイト**（本体のコードは `jpn-x/taisa-mirror`）
 - 公開: **Cloudflare Workers Static Assets**（Worker名 `mirrorx`）。静的HTML/CSS/JSのみ。DB・API・ログインなし。
@@ -50,5 +50,5 @@ node tools/check-links.js https://mirrorx.jp-x.workers.dev   # 公開後の確�
 
 ## 名前・URLについて
 - 正式名称は **MirrorX**。公式URLは https://mirrorx.jp-x.workers.dev/ です。
-- 旧URL `taisa-mirror.jp-x.workers.dev`（開発コードネーム時代のURL）は、当面そのまま残してあります。リンクが外部に残っている可能性があるため、削除はせず、将来は新URLへの転送（301）にする予定です。
-- GitHubのリポジトリ名（`jpn-x/taisa-mirror`、`jpn-x/taisa-mirror-site`）と、`config.js` の内部変数名 `window.TAISA` は、開発コードネームのまま残しています（リンク切れや履歴の混乱を避けるため）。
+- 旧URL `taisa-mirror.jp-x.workers.dev`（旧開発名 TAISA MIRROR 時代のURL）は、当面そのまま残してあります。リンクが外部に残っている可能性があるため、削除はせず、将来は新URLへの転送（301）にする予定です。
+- GitHubのリポジトリ名（`jpn-x/taisa-mirror`、`jpn-x/taisa-mirror-site`）と、`config.js` の内部変数名 `window.TAISA` は、旧開発名のまま残しています（リンク切れや履歴の混乱を避けるため）。
