@@ -40,10 +40,13 @@
 <!-- ============ NAV ============ -->
 <header class="site-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="#top" aria-label="MirrorX 超入門 トップへ戻る">
-      <img class="nav-logo-icon" src="images/logo.svg" alt="" width="34" height="34">
-      <span>MirrorX<span class="nav-logo-sub">超入門</span></span>
-    </a>
+    <div class="nav-brand">
+      <a class="nav-logo" href="#top" aria-label="MirrorX 超入門 トップへ戻る">
+        <img class="nav-logo-icon" src="images/logo.svg" alt="" width="34" height="34">
+        <span>MirrorX<span class="nav-logo-sub">超入門</span></span>
+      </a>
+      <button type="button" class="how-chip" id="howOpen" aria-haspopup="dialog"><span aria-hidden="true">💡</span><span class="how-chip-full">MirrorX の</span>しくみ</button>
+    </div>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="メニューを開く">
       <span></span><span></span><span></span>
     </button>
@@ -336,6 +339,35 @@
     <a class="xbtn" href="https://x.com/cadillac600" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>@cadillac600</a>
   </div>
 </footer>
+
+<!-- ============ HOW IT WORKS (popup) ============ -->
+<dialog id="howDlg" class="how-dlg" aria-labelledby="howTitle">
+  <button type="button" class="how-close" id="howClose" aria-label="閉じる">×</button>
+  <h2 id="howTitle" class="how-title">MirrorX のしくみ</h2>
+  <p class="how-lead">iPhoneの画面を、パソコンのブラウザへ。<br>ぜんぶ、おうちの中だけで動きます。</p>
+
+  <div class="how-flow" role="img" aria-label="iPhoneから、おうちのWi-Fiの中だけで、MirrorXへ。そしてChromeに映る">
+    <div class="how-node"><span class="how-emoji">📱</span>iPhone</div>
+    <div class="how-link"><i></i><small>Wi-Fiの中だけ<br>暗号つき</small></div>
+    <div class="how-node"><span class="how-emoji">🖥️</span>MirrorX</div>
+    <div class="how-link short"><i></i></div>
+    <div class="how-node"><span class="how-emoji">🌐</span>Chrome</div>
+  </div>
+
+  <ol class="how-steps">
+    <li><b>よぶ</b><span>MirrorXが「ここにいるよ！」とWi-Fiの中に知らせる</span></li>
+    <li><b>えらぶ</b><span>iPhoneの画面ミラーリングで「MirrorX」を選ぶ</span></li>
+    <li><b>おくる</b><span>画面を小さく圧縮して、暗号に包んで送る</span></li>
+    <li><b>うつす</b><span>MirrorXが包みをあけて、Chromeが映す</span></li>
+  </ol>
+
+  <div class="how-badges">
+    <span class="free-badge"><b>✓</b> 外に出ない</span>
+    <span class="free-badge"><b>✓</b> アカウント不要</span>
+    <span class="free-badge"><b>✓</b> DefenderもSACもOFFにしない</span>
+  </div>
+  <p class="how-more"><a href="https://github.com/jpn-x/taisa-mirror" data-link="github" target="_blank" rel="noopener">もっとくわしく（GitHub）→</a></p>
+</dialog>
 
 <button class="to-top" id="toTop" hidden aria-label="ページの先頭へ">↑</button>
 

@@ -83,4 +83,16 @@
       wrap.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); } });
     });
   }
+  /* ---------- how-it-works popup ---------- */
+  const howDlg = document.getElementById('howDlg');
+  const howOpen = document.getElementById('howOpen');
+  if (howDlg && howOpen && typeof howDlg.showModal === 'function') {
+    const closeHow = () => howDlg.close();
+    howOpen.addEventListener('click', () => { howDlg.showModal(); document.body.classList.add('how-open'); });
+    document.getElementById('howClose').addEventListener('click', closeHow);
+    howDlg.addEventListener('click', (e) => { if (e.target === howDlg) closeHow(); });   // click on the dark backdrop
+    howDlg.addEventListener('close', () => document.body.classList.remove('how-open'));
+  } else if (howOpen) {
+    howOpen.hidden = true;   // very old browsers: just hide the chip
+  }
 })();
