@@ -4,9 +4,9 @@
 //  ※ releaseUrl は version から自動で作ります。
 // ============================================================
 window.TAISA = {
-  version: '0.1.3',
-  downloadUrl: 'https://github.com/jpn-x/taisa-mirror/releases/download/v0.1.3/taisa-mirror-v0.1.3-win-x64.zip',
-  sha256: '8c7dd56b6911a381103e3d25ac9f2aad0f156fc2cbd8361ec274bfc1803b827c',
+  version: '0.1.4',
+  downloadUrl: 'https://github.com/jpn-x/taisa-mirror/releases/download/v0.1.4/taisa-mirror-v0.1.4-win-x64.zip',
+  sha256: '317f1fa1fa02a597afd8068c639a84c07127826cc39a80b267f6e2650ad8489c',
 
   // ↓ ふだんは変えない
   githubUrl: 'https://github.com/jpn-x/taisa-mirror',
