@@ -170,6 +170,7 @@ a{ color:inherit; }
   box-shadow:var(--shadow-card);
 }
 .hero-visual img{ width:100%; border-radius:var(--radius-md); }
+.hero-visual img.hero-shot{ display:block; width:100%; max-width:340px; height:auto; margin:0 auto; border:1px solid rgba(42,39,72,.12); box-shadow:0 8px 24px rgba(42,39,72,.12); }
 .hero-visual-note{ color:var(--pink-deep); font-weight:800; text-align:center; margin:14px 0 0; }
 
 /* ============ SECTION shells ============ */
