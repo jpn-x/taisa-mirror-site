@@ -449,3 +449,9 @@ a{ color:inherit; }
   .safe-grid{ grid-template-columns:1fr; }
   .nav-logo{ font-size:1.02rem; }
 }
+.x-links{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:20px; }
+.xbtn{ display:inline-flex; align-items:center; gap:7px; padding:9px 18px; border-radius:999px; border:1px solid rgba(255,255,255,.3); color:#fff; text-decoration:none; font-weight:800; font-size:.85rem; background:transparent; transition:.15s; }
+.xbtn svg{ width:14px; height:14px; fill:currentColor; }
+.xbtn:hover{ border-color:var(--pink); color:var(--pink); }
+.xbtn.fill{ background:#fff; color:var(--night); border-color:#fff; }
+.xbtn.fill:hover{ background:var(--pink); border-color:var(--pink); color:#fff; }
