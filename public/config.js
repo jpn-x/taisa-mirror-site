@@ -1,12 +1,13 @@
 // ============================================================
-//  TAISA Mirror の新バージョンが出たら、このファイルの
+//  MirrorX の新バージョンが出たら、このファイルの
 //  「version」「downloadUrl」「sha256」だけ変えればOK（HTML/CSSは触らない）。
 //  ※ releaseUrl は version から自動で作ります。
 // ============================================================
+// ※ window.TAISA は内部の変数名です（開発コードネーム TAISA MIRROR 由来）。画面には出ないので、そのまま使います。
 window.TAISA = {
-  version: '0.1.4',
-  downloadUrl: 'https://github.com/jpn-x/taisa-mirror/releases/download/v0.1.4/taisa-mirror-v0.1.4-win-x64.zip',
-  sha256: '317f1fa1fa02a597afd8068c639a84c07127826cc39a80b267f6e2650ad8489c',
+  version: '0.2.0',
+  downloadUrl: 'https://github.com/jpn-x/taisa-mirror/releases/download/v0.2.0/mirrorx-v0.2.0-win-x64.zip',
+  sha256: 'a53154154a0aa5f379abfd12030139a5a2c792b10db1a6ec660831ef4b639ac4',
 
   // ↓ ふだんは変えない
   githubUrl: 'https://github.com/jpn-x/taisa-mirror',

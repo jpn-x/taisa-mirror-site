@@ -1,7 +1,7 @@
 {
-  // TAISA Mirror official site: static files only (Workers Static Assets, no Worker code, no bindings).
+  // MirrorX official site: static files only (Workers Static Assets, no Worker code, no bindings).
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "taisa-mirror",
+  "name": "mirrorx",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./public"

@@ -9,7 +9,7 @@
   <rect x="150" y="150" width="30" height="110" fill="#fff" stroke="#5BB8F5" stroke-width="3"/>
   <path d="M155 165h20M155 185h20M155 205h20M155 225h20" stroke="#5BB8F5" stroke-width="4"/>
   <rect x="152" y="240" width="26" height="30" rx="5" fill="#FF77AA"/>
-  <text x="165" y="335" text-anchor="middle" font-size="17" fill="#34304A">taisa-mirror-…zip</text>
+  <text x="165" y="335" text-anchor="middle" font-size="17" fill="#34304A">mirrorx-…zip</text>
   <g transform="translate(300 120)">
     <rect width="420" height="300" rx="18" fill="#fff" stroke="#E4DEF5" stroke-width="3"/>
     <text x="30" y="52" font-size="22" fill="#6A6683">開く</text>

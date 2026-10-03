@@ -4,7 +4,7 @@ $root = Split-Path -Parent $PSScriptRoot
 $chrome = @('C:\Program Files\Google\Chrome\Application\chrome.exe', 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe', 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe') | Where-Object { Test-Path $_ } | Select-Object -First 1
 if (-not $chrome) { throw 'Chrome か Edge が見つかりません' }
 $img = Join-Path $root 'public\images'
-$profile = Join-Path ([IO.Path]::GetTempPath()) 'taisa-headless-profile'   # 普段のChromeとは別の一時プロファイル
+$profile = Join-Path ([IO.Path]::GetTempPath()) 'mirrorx-headless-profile'   # 普段のChromeとは別の一時プロファイル
 
 function Shot($html, $out, $w, $h, $transparent) {
   $a = @('--headless=new', '--disable-gpu', '--hide-scrollbars', '--no-first-run', "--window-size=$w,$h", '--virtual-time-budget=6000', "--screenshot=$out", "--user-data-dir=$profile")

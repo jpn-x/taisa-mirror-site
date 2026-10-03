@@ -33,7 +33,7 @@
     <rect x="14" y="48" width="162" height="338" rx="22" fill="#F6F2FF"/>
     <text x="95" y="86" text-anchor="middle" font-size="16" fill="#6A6683">画面ミラーリング</text>
     <rect x="26" y="106" width="138" height="48" rx="14" fill="#fff"/><text x="95" y="136" text-anchor="middle" font-size="15" fill="#6A6683">リビングのTV</text>
-    <rect x="26" y="170" width="138" height="56" rx="16" fill="#FFE4EF" stroke="#FF77AA" stroke-width="5"/><text x="95" y="205" text-anchor="middle" font-size="17" fill="#F2518F">TAISA Mirror</text>
+    <rect x="26" y="170" width="138" height="56" rx="16" fill="#FFE4EF" stroke="#FF77AA" stroke-width="5"/><text x="95" y="205" text-anchor="middle" font-size="17" fill="#F2518F">MirrorX</text>
     <rect x="26" y="242" width="138" height="48" rx="14" fill="#fff"/><text x="95" y="272" text-anchor="middle" font-size="15" fill="#6A6683">寝室のTV</text>
   </g>
   <circle cx="655" cy="468" r="18" fill="#FF77AA"/><text x="655" y="475" text-anchor="middle" font-size="20" fill="#fff">3</text>
